@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
     <!-- orientation : 정렬 기준 (수직/수평)-->
@@ -28,11 +28,25 @@
         android:layout_height="wrap_content"
         android:text="Button"
         />
-    <Button
-        android:id="@+id/Second_View"
-        android:layout_width="wrap_content"
+    <!-- 두번째 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Second View"
-        />
+        android:orientation="horizontal"
+        android:gravity="center">
+        <!-- gravity : 레이아웃 내 요소 정렬 -->
 
+        <ImageView
+            android:id="@+id/img_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher_round"
+            />
+        <Button
+            android:id="@+id/Second_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second View"
+            />
+    </LinearLayout>
 </LinearLayout>
