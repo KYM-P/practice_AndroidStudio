@@ -3,50 +3,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
     <!-- orientation : 정렬 기준 (수직/수평)-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="50sp"
-        android:textColor="#D64242"
-        />
-    <EditText
-        android:id="@+id/edt_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="edit"
-        android:textSize="50sp"
-        />
-    <Button
-        android:id="@+id/btn_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        />
     <!-- 두번째 레이아웃 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
         <!-- gravity : 레이아웃 내 요소 정렬 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textColor="#D64242"
+            android:textSize="50sp" />
+
+        <EditText
+            android:id="@+id/edt_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="edit"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
 
         <ImageView
             android:id="@+id/img_1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@mipmap/ic_launcher_round"
-            />
+            android:src="@mipmap/ic_launcher_round" />
+
         <Button
             android:id="@+id/Second_View"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Second View"
-            />
+            android:text="Second View" />
+
+        <ListView
+            android:id="@+id/list_v_1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
     </LinearLayout>
+
 </LinearLayout>
