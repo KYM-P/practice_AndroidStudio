@@ -18,6 +18,13 @@
         android:id="@+id/First_View"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First View" />
+        android:text="First View"
+        />
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="camera"
+        />
 
 </LinearLayout>
