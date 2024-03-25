@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <!-- orientation : 정렬기준 (ver : 수직 / hor / 수평) -->
+
+    <!-- 두번째 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="hi"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:autoSizeTextType="uniform"
+            />
+    </LinearLayout>>
+    <!-- gravity : 내부 요소 정렬 기준 -->
+    <!-- autoSizeTextType : 공간에 따라 텍스트 크기 자동 조절 -->
+    <!-- ellipsize : Text 효과 (단 공간을 벗어난 textview 에 한정)
+    marquee 전광판 효과 (단 TextView가 select 되어야함)
+    start 시작부분 ... / middle 중간부분 ... / end 끝부분 ...-->
+
+    <TextView
+        android:id="@+id/hello_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="40sp"
+        android:textColor="#3F51B5"
+        android:gravity="center"
+        android:bufferType="spannable"
+        />
+    <Button
+        android:id="@+id/go_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="30dp"
+        />
+    <!-- margin(방향) : 해당 방향쪽에 공백을 생성 (margin은 왼쪽위)-->
+
+
+</LinearLayout>

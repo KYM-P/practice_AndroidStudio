@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".button_sample"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi"
+        android:textSize="50sp"
+        android:hint="hi"
+        />
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello!"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:background="@drawable/ic_launcher_foreground"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        />
+    <!-- Button -->
+    <!-- background="@drawable/~ : drawable 파일의 한 요소를 배경으로 설정-->
+    <!-- drawable위치="@drawable/~ : drawable 파일의 한 요소를 버튼의 (위치)쪽에 표시-->
+
+</LinearLayout>
