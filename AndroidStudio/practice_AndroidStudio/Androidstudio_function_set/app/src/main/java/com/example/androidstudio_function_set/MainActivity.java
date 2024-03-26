@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         go_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Class c = Imageview_sample.class;
+                Class c = listview_sample.class;
                 Intent i = new Intent(MainActivity.this, c);
                 startActivity(i);
             }
