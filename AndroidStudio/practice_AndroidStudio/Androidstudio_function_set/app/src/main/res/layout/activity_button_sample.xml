@@ -15,6 +15,9 @@
         android:text="Hi"
         android:textSize="50sp"
         android:hint="hi"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:layout_marginBottom="20dp"
         />
     <Button
         android:id="@+id/btn_2"
@@ -29,5 +32,7 @@
     <!-- Button -->
     <!-- background="@drawable/~ : drawable 파일의 한 요소를 배경으로 설정-->
     <!-- drawable위치="@drawable/~ : drawable 파일의 한 요소를 버튼의 (위치)쪽에 표시-->
+    <!-- padding : 버튼 내부 text 에 padding 이 구현-->
+    <!-- margin : 버튼에 padding 이 구현되는 느낌-->
 
 </LinearLayout>

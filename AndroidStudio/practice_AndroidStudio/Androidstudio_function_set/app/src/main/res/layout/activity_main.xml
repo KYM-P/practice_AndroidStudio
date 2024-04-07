@@ -21,15 +21,22 @@
             android:text="hi"
             android:textSize="50sp"
             android:textColor="@color/black"
+            android:textStyle="bold"
             android:gravity="center_horizontal"
             android:autoSizeTextType="uniform"
             />
     </LinearLayout>>
+    <!-- weight : 내부 요소를 layout 내부 각 weight 값 / 전체 weight 값 의 비율로 설정 -->
     <!-- gravity : 내부 요소 정렬 기준 -->
     <!-- autoSizeTextType : 공간에 따라 텍스트 크기 자동 조절 -->
     <!-- ellipsize : Text 효과 (단 공간을 벗어난 textview 에 한정)
     marquee 전광판 효과 (단 TextView가 select 되어야함)
     start 시작부분 ... / middle 중간부분 ... / end 끝부분 ...-->
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
 
     <TextView
         android:id="@+id/hello_text"
